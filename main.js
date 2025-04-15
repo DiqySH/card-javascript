@@ -5,6 +5,12 @@ let basicLabel = document.getElementById("basic")
 let standardLabel = document.getElementById("standard")
 let premiumLabel = document.getElementById("premium")
 let penjelasan = document.getElementById("penjelasan")
+let notif = document.getElementById("notif")
+
+notif.addEventListener("click", function() {
+    let notifAddToCart = document.getElementById("notifAddToCart")
+    notifAddToCart.style.right = "1rem"
+})
 
 basicLabel.addEventListener("click", function() {
     if(basicInput.checked = true) {
@@ -56,8 +62,7 @@ basicLabel.addEventListener("click", function() {
                 justify-content: center;
                 align-items: center;
                 width: fit-content;
-"><img src="./img/false.svg" alt="">Converted to responsive components</p>
-                <button>Add to cart</button>`
+"><img src="./img/false.svg" alt="">Converted to responsive components</p>`
     }
 })
 
@@ -111,8 +116,7 @@ standardLabel.addEventListener("click", function() {
                 justify-content: center;
                 align-items: center;
                 width: fit-content;
-"><img src="./img/check.svg" alt="">Converted to responsive components</p>
-                <button>Add to cart</button>`
+"><img src="./img/check.svg" alt="">Converted to responsive components</p>`
     }
 })
 
@@ -166,7 +170,6 @@ premiumLabel.addEventListener("click", function() {
                 justify-content: center;
                 align-items: center;
                 width: fit-content;
-"><img src="./img/check.svg" alt="">Converted to responsive components</p>
-                <button>Add to cart</button>`
+"><img src="./img/check.svg" alt="">Converted to responsive components</p>`
     }
 })

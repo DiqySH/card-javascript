@@ -8,6 +8,8 @@ main {
     justify-content: center;
     align-items: center;
     font-family: "Roboto", sans-serif;
+    overflow: hidden;
+    position: relative;
 }
 
 .card {
@@ -20,7 +22,7 @@ main {
     align-items: center;
     min-height: 600px;
     gap: 76px;
-    scale: 0.9;
+    scale: 0.85;
     padding: 10px 20px;
     border-radius: 20px;
 }
@@ -89,20 +91,22 @@ main {
     display: flex;
     flex-direction: column;
     gap: 35px;
-    button {
-        width: 100%;
-        background-color: #4D46A5;
-        border-style: none;
-        min-height: 72px;
-        border-radius: 36px;
-        font-family: Roboto;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 100%;
-        letter-spacing: 0%;
-        color: white;
-        &:hover {
-            cursor: pointer;
-        }
+}
+
+#notif {
+    max-width: 417px;
+    width: 100%;
+    background-color: #4D46A5;
+    border-style: none;
+    min-height: 72px;
+    border-radius: 36px;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: white;
+    &:hover {
+        cursor: pointer;
     }
 }
