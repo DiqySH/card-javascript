@@ -1,0 +1,108 @@
+main {
+    width: 100%;
+    min-height: 100svh;
+    background-image: url(./img/bg.png);
+    background-color: #4D46A5;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+}
+
+.card {
+    max-width: 600px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 600px;
+    gap: 76px;
+    scale: 0.9;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.btn-container {
+    border: 1px solid #DFDFDF;
+    max-width: 519px;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    width: 100%;
+    border-radius: 20px;
+    label {
+        padding: 10px;
+        max-width: 142px;
+        min-height: 72px;
+        width: 100%;
+        background-color: transparent;
+        border-style: none;
+        border-radius: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    &:has(#basicInput:checked) {
+        #basic {
+            background-color: #45A69A;
+            color: white;
+        }
+    }
+    &:has(#standardInput:checked) {
+        #standard {
+            background-color: #45A69A;
+            color: white;
+        }
+    }
+    &:has(#premiumInput:checked) {
+        #premium {
+            background-color: #45A69A;
+            color: white;
+        }
+    }
+    input {
+        display: none;
+    }
+}
+
+#harga {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 14px;
+    div {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+#penjelasan {
+    max-width: 417px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    button {
+        width: 100%;
+        background-color: #4D46A5;
+        border-style: none;
+        min-height: 72px;
+        border-radius: 36px;
+        font-family: Roboto;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: white;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
